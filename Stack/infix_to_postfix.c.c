@@ -37,7 +37,7 @@ int main()
     printf("Enter Infix Expression: ");
     scanf("%s", infix);
 
-    for (i = 0; infix[i] != '\0'; i++) {  //read karse ke operator che ke nai
+    for (i = 0; infix[i] != '\0'; i++) {  
         if (isalnum(infix[i])) {
             postfix[j++] = infix[i];
         }
@@ -54,7 +54,7 @@ int main()
         }
 
         else {
-            while (top != -1 && precedence(peek()) >= precedence(infix[i])) {        //check karse this higher or equal priority
+            while (top != -1 && precedence(peek()) >= precedence(infix[i])) {        
                 postfix[j++] = pop();
             }
             push(infix[i]);
