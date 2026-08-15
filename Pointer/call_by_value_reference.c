@@ -1,3 +1,5 @@
+//prectical 2.2
+
 #include <stdio.h>
 
 // Call by Value
