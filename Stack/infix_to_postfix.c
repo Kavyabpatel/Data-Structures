@@ -5,12 +5,12 @@
 
 #define MAX 100 
 
-char stack[MAX];  stack store karse operators and brackets
+char stack[MAX];  s
 int top = -1;
 
 void push(char ch)
 {
-    stack[++top] = ch; // add operators in stack
+    stack[++top] = ch;
 }
 
 char pop()
